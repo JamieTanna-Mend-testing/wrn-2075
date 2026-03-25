@@ -5,7 +5,7 @@ directories:
     contents:
       - path: private-apis
         git:
-          url: https://github.com/jamietanna/example-github-actions-sync-files-private
+          url: https://github.com/JamieTanna-Mend-Testing/example-github-actions-sync-files-private
           ref: origin/main
         includePaths:
           - api/**/*.yml
