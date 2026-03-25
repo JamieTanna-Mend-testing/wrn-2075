@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "customManagers": [
+    {
+      "description": "Test github-tags datasource via regex manager",
+      "customType": "regex",
+      "fileMatch": ["\\.env\\.example$"],
+      "matchStrings": ["TOOL_VERSION=(?<currentValue>[^\\n]+)\\s+#renovate: datasource=(?<datasource>[^\\s]+) depName=(?<depName>[^\\n]+)"],
+      "versioningTemplate": "semver"
+    }
+  ]
+}
