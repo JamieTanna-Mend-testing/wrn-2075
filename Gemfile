@@ -9,3 +9,7 @@ gem 'rspec', '~> 3.13'
 source 'https://rubygems.pkg.github.com/github' do
   gem 'github-ds', '0.5.4'
 end
+
+source 'https://rubygems.pkg.github.com/at-point' do
+  gem 'obh-client', '~> 1'
+end
