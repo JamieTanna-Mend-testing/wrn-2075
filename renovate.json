@@ -7,8 +7,8 @@
     {
       "description": "Test github-tags datasource via regex manager",
       "customType": "regex",
-      "fileMatch": [
-        "\\.env\\.example$"
+      "managerFilePatterns": [
+        "/\\.env\\.example$/"
       ],
       "matchStrings": [
         "TOOL_VERSION=(?<currentValue>[^\\n]+)\\s+#renovate: datasource=(?<datasource>[^\\s]+) depName=(?<depName>[^\\n]+)"
